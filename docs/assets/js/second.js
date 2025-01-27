@@ -1,24 +1,3 @@
-
-  const username = prompt("Enter username:");
-  const password = prompt("Enter password:");
-
-  if (username !== "coburncreative" || password !== "coburn25") {
-    document.body.innerHTML = "<h1>Access Denied</h1>";
-} else {
-    document.body.innerHTML = `
-    <div class="card">
-    <div class="card-image">
-        <div class="reflective-square"></div>
-        <img src="assets/img/toreka_noback.png" alt="" class="image-2">
-        <img src="assets/img/non_back.PNG" alt="" class="image">
-        <img src="assets/img/holo-square.png" alt="holo" class="holo">
-    </div>
-</div>
-<div class="link">
-    <a href="second.html">Go to Second Pattern</a>
-</div>
-    `;
-
 const reflectiveSquare = document.querySelector('.reflective-square');
 const images = document.querySelector('.image-2');
 const image = document.querySelector('.image');
@@ -59,4 +38,3 @@ document.addEventListener('mousemove', (event) => {
         images.style.transform = transformStyle;
     });
 });
-}
