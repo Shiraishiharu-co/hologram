@@ -1,3 +1,13 @@
+
+  const username = prompt("Enter username:");
+  const password = prompt("Enter password:");
+
+  if (username !== "coburncreative" || password !== "coburn25") {
+    document.body.innerHTML = "<h1>Access Denied</h1>";
+  } else {
+    document.body.innerHTML = "<h1>Welcome to the secure page!</h1>";
+  }
+
 const reflectiveSquare = document.querySelector('.reflective-square');
 const images = document.querySelector('.image-2');
 const image = document.querySelector('.image');
