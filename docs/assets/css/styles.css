@@ -121,7 +121,7 @@ body, html {
     z-index: 8;
 }
 
-.holo, .holo-2 {
+.holo, .holo-2, .holo-3 {
   width: 281px;
   height: 393px;
   top: 20%;
@@ -140,6 +140,9 @@ body, html {
   opacity: 0;
 }
 
+.holo-3 {
+  opacity: 0;
+}
 
 /* .holo, .holo-2 {
     position: absolute;

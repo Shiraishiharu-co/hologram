@@ -13,10 +13,11 @@ const username = prompt("Enter username:");
             <img src="assets/img/toreka_background.png" alt="" class="image">
             <img src="assets/img/holo-HP49.png" alt="holo" class="holo">
             <img src="assets/img/holo-HP49-2.png" alt="holo" class="holo-2">
+            <img src="assets/img/holo-HP49-3.png" alt="holo" class="holo-3">
         </div>
     </div>
     <div class="link">
-        <a href="index.html">CH01</a>
+        <a href="index.html">CH02</a>
     </div>
     <div class="link-2">
         <a href="holo-K10.html">K10</a>
@@ -40,6 +41,7 @@ const username = prompt("Enter username:");
     const image = document.querySelector('.image');
     const holo = document.querySelector('.holo');
     const holo2 = document.querySelector('.holo-2');
+    const holo3 = document.querySelector('.holo-3');
     
     
     
@@ -78,16 +80,28 @@ const username = prompt("Enter username:");
             images2.style.transform = transformStyle;
             holo.style.transform = transformStyle;
             holo2.style.transform = transformStyle;
+            holo3.style.transform = transformStyle;
     
-            // マウスの位置で opacity を切り替え
-            if (clientX > innerWidth / 2) {
-                // 右半分にマウスがある場合
+            // 三分割の境界線を計算
+            const oneThird = innerWidth / 3; // 画面の幅を3分割
+            const twoThirds = (innerWidth / 3) * 2;
+        
+            // 位置に応じて opacity を切り替え
+            if (clientX <= oneThird) {
+                // 左側 (holo)
                 holo.style.opacity = '0.6';
                 holo2.style.opacity = '0';
-            } else {
-                // 左半分にマウスがある場合
+                holo3.style.opacity = '0';
+            } else if (clientX > oneThird && clientX <= twoThirds) {
+                // 中央 (holo-2)
                 holo.style.opacity = '0';
                 holo2.style.opacity = '0.6';
+                holo3.style.opacity = '0';
+            } else {
+                // 右側 (holo-3)
+                holo.style.opacity = '0';
+                holo2.style.opacity = '0';
+                holo3.style.opacity = '0.6';
             }
         });
     });
