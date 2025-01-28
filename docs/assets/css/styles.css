@@ -5,28 +5,93 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: rgb(39, 38, 38);
     overflow: hidden;
     cursor: crosshair;
 }
 
-.link {
-    position: absolute;
-    color: white;
-    top: 5%;
+.link,
+.link-2,
+.link-3,
+.link-4,
+.link-5 {
+  position: absolute;
+  left: 5%;
 }
 
+.link {
+  top: 5%;
+}
+
+.link-2 {
+  top: 10%;
+}
+
+.link-3 {
+  top: 15%;
+}
+
+.link-4 {
+  top: 20%;
+}
+
+.link-5 {
+  top: 25%;
+}
+
+.link a,
+.link-2 a,
+.link-3 a,
+.link-4 a,
+.link-5 a {
+  display: inline-block; /* ボタンのようにする */
+  padding: 10px 20px; /* ボタン内の余白 */
+  font-size: 16px; /* 文字の大きさ */
+  font-weight: bold; /* 太字 */
+  color: #ffffff; /* テキスト色 */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* グラデーション背景 */
+  border-radius: 8px; /* 角を丸く */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ボタンの影 */
+  text-align: center; /* テキストを中央寄せ */
+  text-decoration: none; /* アンダーラインを消す */
+  cursor: pointer; /* ポインタを指マークに */
+  transition: all 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.link a:hover,
+.link-2 a:hover,
+.link-3 a:hover, 
+.link-4 a:hover,
+.link-5 a:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f); /* グラデーションを反転 */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
+  transform: translateY(-3px); /* 少し浮かせる */
+}
+  
 .reflective-square {
     position: absolute;
     top: 20%;
     left: 40%;
     width: 280px;
     height: 390px;
-    background: repeating-linear-gradient(to top right, rgb(164, 149, 220) 2.94%, rgb(242, 197, 209) 34.87%, rgb(199, 183, 76) 50%, #ddd394 60.5%, #559658 77.31%, #c5b8b8 100%, #6e5b5b);
+    background: repeating-linear-gradient(62deg, rgb(218, 160, 176) 18.49%, rgb(255, 255, 255) 32.35%, rgb(217, 208, 146) 44.54%, #f1c0a2 53.78%, #f88c8c 70.59%, #c5b8b8 100%, #d6a8a8);
     border-radius: 8px;
     box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
     transform: translate(-50%, -50%);
     will-change: transform, filter;
+}
+
+
+
+.image {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 285px;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+    z-index: 6;
+    opacity: 0.5;
 }
 
 .image-2 {
@@ -36,20 +101,40 @@ body, html {
     width: 285px;
     transform: translate(-50%, -50%);
     will-change: transform;
-    z-index: 6;
+    z-index: 7;
 }
 
-.image {
+.image-3 {
     position: absolute;
     top: 20%;
     left: 40%;
     width: 285px;
     transform: translate(-50%, -50%);
     will-change: transform;
-    z-index: 5;
+    z-index: 8;
+}
+
+.holo, .holo-2 {
+  width: 281px;
+  height: 393px;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: opacity 0.3s ease;
+  will-change: opacity;
 }
 
 .holo {
+  opacity: 1;
+}
+
+.holo-2 {
+  opacity: 0;
+}
+
+
+/* .holo, .holo-2 {
     position: absolute;
     top: 20%;
     left: 40%;
@@ -58,7 +143,7 @@ body, html {
     transform: translate(-50%, -50%);
     will-change: transform, filter;
     opacity: 0.7;
-}
+} */
 
 /* Reflective effects */
 .reflective-square::before {
@@ -88,17 +173,4 @@ body, html {
     pointer-events: none;
     border-radius: 8px;
     animation: move-light 5s infinite linear;
-}
-
-/* Light animation */
-@keyframes move-light {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
 }
