@@ -144,18 +144,6 @@ body, html {
   opacity: 0;
 }
 
-/* .holo, .holo-2 {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 281px;
-    height: 393px;
-    transform: translate(-50%, -50%);
-    will-change: transform, filter;
-    opacity: 0.7;
-} */
-
-/* Reflective effects */
 .reflective-square::before {
     content: '';
     position: absolute;
