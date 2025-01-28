@@ -14,7 +14,8 @@ body, html {
 .link-2,
 .link-3,
 .link-4,
-.link-5 {
+.link-5,
+.link-6 {
   position: absolute;
   left: 5%;
 }
@@ -39,11 +40,16 @@ body, html {
   top: 25%;
 }
 
+.link-6 {
+  top: 30%;
+}
+
 .link a,
 .link-2 a,
 .link-3 a,
 .link-4 a,
-.link-5 a {
+.link-5 a,
+.link-6 a {
   display: inline-block; /* ボタンのようにする */
   padding: 10px 20px; /* ボタン内の余白 */
   font-size: 16px; /* 文字の大きさ */
@@ -62,7 +68,8 @@ body, html {
 .link-2 a:hover,
 .link-3 a:hover, 
 .link-4 a:hover,
-.link-5 a:hover {
+.link-5 a:hover,
+.link-6 a:hover {
   background: linear-gradient(45deg, #feb47b, #ff7e5f); /* グラデーションを反転 */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
   transform: translateY(-3px); /* 少し浮かせる */
