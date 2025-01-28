@@ -6,23 +6,30 @@ const username = prompt("Enter username:");
 } else {
     document.body.innerHTML = `
     <div class="card">
-    <div class="card-image">
-        <div class="reflective-square"></div>
-        <img src="assets/img/non_back.PNG" alt="" class="image">
-        <img src="assets/img/toreka_noback.png" alt="" class="image-2">
-        <img src="assets/img/toreka_sample.png" alt="" class="image-3">
-        <img src="assets/img/holo-CH01.png" alt="holo" class="holo">
+        <div class="card-image">
+            <div class="reflective-square"></div>
+            <img src="assets/img/toreka_frame.png" alt="" class="image-3">
+            <img src="assets/img/toreka_charactor.png" alt="" class="image-2">
+            <img src="assets/img/toreka_background.png" alt="" class="image">
+            <img src="assets/img/holo-HP49.png" alt="holo" class="holo">
+            <img src="assets/img/holo-HP49-2.png" alt="holo" class="holo-2">
+        </div>
     </div>
-</div>
-<div class="link">
-    <a href="index.html">CH01</a>
-</div>
-<div class="link-2">
-    <a href="holo-K10.html">K10</a>
-</div>
-<div class="link-3">
-    <a href="holo-K38.html">K38</a>
-</div>
+    <div class="link">
+        <a href="index.html">CH01</a>
+    </div>
+    <div class="link-2">
+        <a href="holo-K10.html">K10</a>
+    </div>
+    <div class="link-3">
+        <a href="holo-K38.html">K38</a>
+    </div>
+    <div class="link-4">
+        <a href="holo-SB38.html">SB38</a>
+    </div>
+    <div class="link-5">
+        <a href="holo-HP49.html">HP49</a>
+    </div>
     `;
 const reflectiveSquare = document.querySelector('.reflective-square');
 const images2 = document.querySelector('.image-3');
