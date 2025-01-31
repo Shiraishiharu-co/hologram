@@ -64,10 +64,10 @@
         scene.add(cube);
 
         // ライトの追加
-        const mouseLight = new THREE.PointLight(0xffcc88, 5, 200);
+        const mouseLight = new THREE.PointLight(0xffcc88, 10, 500);
         mouseLight.castShadow = true;
         scene.add(mouseLight);
-        let light = new THREE.PointLight(0xffffff, 1.5, 100);
+        let light = new THREE.PointLight(0xffffff, 10, 500);
         light.position.set(2, 2, 2);
         scene.add(light);
         
@@ -109,9 +109,9 @@
         
             // マウスが動いている間だけ光らせる（500ms 動かなかったら通常の透明度に戻る）
             if (timeSinceLastMove < 500) {
-                imageMaterial.opacity = 0.5 + lightIntensity * 0.2;
+                imageMaterial.opacity = 0.7 + lightIntensity * 0.3;
             } else {
-                imageMaterial.opacity = 0.5;
+                imageMaterial.opacity = 0.7;
             }
         
             renderer.render(scene, camera);
