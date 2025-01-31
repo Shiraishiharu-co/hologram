@@ -6,34 +6,42 @@ const username = prompt("Enter username:");
 } else {
     document.body.innerHTML = `
     <div class="card">
-        <div class="card-image">
-            <div class="reflective-square"></div>
-            <img src="assets/img/toreka_frame.png" alt="" class="image-3">
-            <img src="assets/img/toreka_charactor.png" alt="" class="image-2">
-            <img src="assets/img/toreka_background.png" alt="" class="image">
-            <img src="assets/img/holo-HP49.png" alt="holo" class="holo">
-            <img src="assets/img/holo-HP49-2.png" alt="holo" class="holo-2">
-            <img src="assets/img/holo-HP49-3.png" alt="holo" class="holo-3">
-        </div>
+    <div class="card-image">
+    <div class="card-reflective"></div>
+    <img src="assets/img/toreka_background.png" alt="" class="card-reflective-image">
+    <img src="assets/img/toreka_charactor.png" alt="" class="card-reflective-image-2">
+    <img src="assets/img/toreka_frame.png" alt="" class="card-reflective-image-3">
+    <img src="assets/img/holo-K-17.png" alt="holo" class="card-reflective-holo">
+    <img src="assets/img/holo-K-17-2.png" alt="holo" class="card-reflective-holo-2">
+    <img src="assets/img/holo-K-17-3.png" alt="holo" class="card-reflective-holo-3">
     </div>
-    <div class="link">
+    </div>
+    <div class="button">
+    <div class="button-link">
         <a href="index.html">CH02</a>
     </div>
-    <div class="link-2">
+    <div class="button-link-2">
         <a href="holo-K10.html">K10</a>
     </div>
-    <div class="link-3">
+    <div class="button-link-3">
         <a href="holo-K38.html">K38</a>
     </div>
-    <div class="link-4">
+    <div class="button-link-4">
         <a href="holo-SB38.html">SB38</a>
     </div>
-    <div class="link-5">
+    <div class="button-link-5">
         <a href="holo-KP76.html">KP76</a>
     </div>
-    <div class="link-6">
-        <a href="holo-HP49.html">HP49</a>
+    <div class="button-link-6">
+        <a href="holo-K209.html">K209</a>
     </div>
+    <div class="button-link-7">
+        <a href="holo-K-17.html">K-17</a>
+    </div>
+    <div class="button-link-8">
+        <a href="3D.html">立方体テスト</a>
+    </div>
+</div>
 `;
 
 
