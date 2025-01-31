@@ -1,9 +1,17 @@
-const reflectiveSquare = document.querySelector('.reflective-square');
-const images2 = document.querySelector('.image-3');
-const images = document.querySelector('.image-2');
-const image = document.querySelector('.image');
-const holo = document.querySelector('.holo');
-const holo2 = document.querySelector('.holo-2');
+async function loadButton() {
+    const response = await fetch("button.html");
+    const content = await response.text();
+    document.getElementById("button").innerHTML = content;
+}
+
+loadButton();
+
+const reflectiveSquare = document.querySelector('.card-reflective');
+const image = document.querySelector('.card-reflective-image');
+const images = document.querySelector('.card-reflective-image-2');
+const images2 = document.querySelector('.card-reflective-image-3');
+const holo = document.querySelector('.card-reflective-holo');
+const holo2 = document.querySelector('.card-reflective-holo-2');
 
 
 

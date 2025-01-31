@@ -1,55 +1,106 @@
+@charset "UTF-8";
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(39, 38, 38);
-    overflow: hidden;
-    cursor: crosshair;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(39, 38, 38);
+  overflow: hidden;
+  cursor: crosshair;
 }
 
-.link,
-.link-2,
-.link-3,
-.link-4,
-.link-5,
-.link-6 {
+.card-reflective {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 280px;
+  height: 390px;
+  background: repeating-linear-gradient(62deg, rgb(218, 160, 176) 18.49%, rgb(255, 255, 255) 32.35%, rgb(217, 208, 146) 44.54%, #f1c0a2 53.78%, #f88c8c 70.59%, #c5b8b8 100%, #d6a8a8);
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  will-change: transform, filter;
+}
+.card-reflective::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
+  z-index: 1;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  border-radius: 8px;
+}
+.card-reflective::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
+  z-index: 2;
+  mix-blend-mode: screen;
+  pointer-events: none;
+  border-radius: 8px;
+  animation: move-light 5s infinite linear;
+}
+.card-reflective-image {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 285px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  z-index: 6;
+  opacity: 0.5;
+}
+.card-reflective-image-2 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 285px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  z-index: 7;
+}
+.card-reflective-image-3 {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 285px;
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  z-index: 8;
+}
+.card-reflective-holo, .card-reflective-holo-2, .card-reflective-holo-3 {
+  width: 281px;
+  height: 393px;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
+.card-reflective-holo {
+  opacity: 1;
+}
+.card-reflective-holo-2, .card-reflective-holo-3 {
+  opacity: 0;
+}
+
+.button {
   position: absolute;
   left: 5%;
-}
-
-.link {
-  top: 5%;
-}
-
-.link-2 {
   top: 10%;
 }
-
-.link-3 {
-  top: 15%;
-}
-
-.link-4 {
-  top: 20%;
-}
-
-.link-5 {
-  top: 25%;
-}
-
-.link-6 {
-  top: 30%;
-}
-
-.link a,
-.link-2 a,
-.link-3 a,
-.link-4 a,
-.link-5 a,
-.link-6 a {
+.button a {
   display: inline-block; /* ボタンのようにする */
   padding: 10px 20px; /* ボタン内の余白 */
   font-size: 16px; /* 文字の大きさ */
@@ -63,112 +114,36 @@ body, html {
   cursor: pointer; /* ポインタを指マークに */
   transition: all 0.3s ease; /* ホバー時のアニメーション */
 }
-
-.link a:hover,
-.link-2 a:hover,
-.link-3 a:hover, 
-.link-4 a:hover,
-.link-5 a:hover,
-.link-6 a:hover {
+.button a:hover {
   background: linear-gradient(45deg, #feb47b, #ff7e5f); /* グラデーションを反転 */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
   transform: translateY(-3px); /* 少し浮かせる */
 }
-  
-.reflective-square {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 280px;
-    height: 390px;
-    background: repeating-linear-gradient(62deg, rgb(218, 160, 176) 18.49%, rgb(255, 255, 255) 32.35%, rgb(217, 208, 146) 44.54%, #f1c0a2 53.78%, #f88c8c 70.59%, #c5b8b8 100%, #d6a8a8);
-    border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
-    transform: translate(-50%, -50%);
-    will-change: transform, filter;
+.button-link {
+  margin: 3px;
+  top: 5%;
 }
-
-
-
-.image {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 285px;
-    transform: translate(-50%, -50%);
-    will-change: transform;
-    z-index: 6;
-    opacity: 0.5;
+.button-link-2 {
+  top: 10%;
+  margin: 3px;
 }
-
-.image-2 {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 285px;
-    transform: translate(-50%, -50%);
-    will-change: transform;
-    z-index: 7;
+.button-link-3 {
+  top: 15%;
+  margin: 3px;
 }
-
-.image-3 {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 285px;
-    transform: translate(-50%, -50%);
-    will-change: transform;
-    z-index: 8;
-}
-
-.holo, .holo-2, .holo-3 {
-  width: 281px;
-  height: 393px;
+.button-link-4 {
   top: 20%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  transition: opacity 0.3s ease;
-  will-change: opacity;
+  margin: 3px;
 }
-
-.holo {
-  opacity: 1;
+.button-link-5 {
+  top: 25%;
+  margin: 3px;
 }
-
-.holo-2 {
-  opacity: 0;
+.button-link-6 {
+  top: 30%;
+  margin: 3px;
 }
-
-.holo-3 {
-  opacity: 0;
-}
-
-.reflective-square::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
-    z-index: 1;
-    mix-blend-mode: lighten;
-    pointer-events: none;
-    border-radius: 8px;
-}
-
-.reflective-square::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-    z-index: 2;
-    mix-blend-mode: screen;
-    pointer-events: none;
-    border-radius: 8px;
-    animation: move-light 5s infinite linear;
-}
+.button-link-7 {
+  top: 35%;
+  margin: 3px;
+}/*# sourceMappingURL=styles.css.map */
