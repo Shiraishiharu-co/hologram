@@ -1,0 +1,121 @@
+ .card-wrapper:hover {
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+    translate: calc((var(--ratiox) - 0.5) * -5%) calc((var(--ratioy) - 0.5) * -5%);
+  }
+  
+  .card-wrapper:hover > .highlight {
+    background: radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.3) 10%, rgba(255,255,255,.15) 20%, rgba(0,0,0,.5) 90%);
+    mix-blend-mode: soft-light;
+  }
+  
+  .color {
+    mix-blend-mode: color-dodge;
+    display: grid;
+  }
+  .card-wrapper {
+    background-image: url(/docs/assets/img/toreka_background.png);
+    background-size: 100%;
+  }
+  .card-wrapper:hover > .color {
+    background-image:
+         url(""),
+         linear-gradient( -33deg, 
+         rgb(206, 42, 36) 6%,  
+         rgb(157, 170, 223) 12%, 
+         rgb(45, 153, 146) 18%, 
+         rgb(29, 151, 36) 24%, 
+         rgb(181, 64, 228) 30%, 
+         rgb(206, 42, 36) 36%
+         ),
+         linear-gradient( 
+         133deg, 
+         rgba(14, 21, 46, 0.5) 0%, 
+         hsl(180, 10%, 50%) 2.5%, 
+         hsl(83, 50%, 35%) 5%, 
+         hsl(180, 10%, 50%) 7.5%, 
+         rgba(14, 21, 46, 0.5) 10% , 
+         rgba(14, 21, 46, 0.5) 15% 
+         ),
+         radial-gradient(
+         farthest-corner circle 
+         at var(--mx) var(--my),
+         rgba(6, 218, 255, 0.6) 0%, 
+         rgba(38, 235, 127, 0.6) 25%, 
+         rgba(155, 78, 228, 0.6) 50%, 
+         rgba(228, 78, 90, 0.6) 75%
+         );
+    background-blend-mode: screen;
+    background-size: 30% 26%, 200% 700%, 300% 100%, 200% 100%;
+    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+    filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
+  }
+  
+  .card-wrapper:hover > .color::after {
+    content: "";
+      background-size: 30% 26%, 200% 400%, 195% 100%, 200% 100%;
+      background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
+      filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
+      mix-blend-mode: exclusion;
+    background-image: 
+    url(""),
+        repeating-linear-gradient( -33deg, 
+        rgb(206, 42, 36) 6%,  
+        rgb(157, 170, 223) 12%, 
+        rgb(45, 153, 146) 18%, 
+        rgb(29, 151, 36) 24%, 
+        rgb(181, 64, 228) 30%, 
+        rgb(206, 42, 36) 36%
+        ),
+        repeating-linear-gradient( 
+        133deg, 
+        rgba(14, 21, 46, 0.5) 0%, 
+        hsl(180, 10%, 50%) 2.5%, 
+        hsl(83, 50%, 35%) 5%, 
+        hsl(180, 10%, 50%) 7.5%, 
+        rgba(14, 21, 46, 0.5) 10% , 
+        rgba(14, 21, 46, 0.5) 15% 
+        ),
+        radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(6, 218, 255, 0.6) 0%, 
+        rgba(38, 235, 127, 0.6) 25%, 
+        rgba(155, 78, 228, 0.6) 50%, 
+        rgba(228, 78, 90, 0.6) 75%
+        );
+      background-blend-mode: color-dodge, screen, soft-light;
+  }
+  
+  /*形を整える*/
+  .card {
+    border-radius: 4.5% / 3.5%;
+    box-shadow: 0 10px 20px -5px #000;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-wrapper {
+    aspect-ratio: .716;
+    display: grid;
+    height: calc(100% - 32px);
+    max-width: 100%;
+    place-items: center;
+    position: absolute;
+  }
+  
+  /*真ん中に持ってきている*/
+  body {
+    background-color: #212529;
+    display: grid;
+    height: calc(100vh - 32px);
+    margin: 0;
+    padding: 16px;
+    place-items: center;
+    position: relative;
+    width: calc(100% - 32px);
+  }
+  
+  
+  
