@@ -1,5 +1,5 @@
 .card-wrapper:hover {
-  transform: rotateX(var(--rx)) rotateY(var(--ry));
+    transform: rotateX(var(--rx)) rotateY(var(--ry));
     translate: calc((var(--ratiox) - 0.5) * -5%) calc((var(--ratioy) - 0.5) * -5%);
   }
   
@@ -18,17 +18,11 @@
   }
   .card-wrapper:hover > .color {
     background-image:
-         url("/docs/assets/img/KP42.png"),
-         linear-gradient( -33deg, 
-         rgb(206, 42, 36) 6%,  
-         rgb(157, 170, 223) 12%, 
-         rgb(45, 153, 146) 18%, 
-         rgb(29, 151, 36) 24%, 
-         rgb(181, 64, 228) 30%, 
-         rgb(206, 42, 36) 36%
-         ),
+         url("/docs/assets/img/K40.png"),
+         linear-gradient( -90deg, 
+         0deg, rgb(255, 119, 115) 5%, rgba(255,237,95,1) 10%, rgba(168,255,95,1) 15%, rgba(131,255,247,1) 20%, rgba(120,148,255,1) 25%, rgb(216, 117, 255) 30%,rgb(255, 119, 115) 35%),
          linear-gradient( 
-         133deg, 
+         90deg, 
          rgba(14, 21, 46, 0.5) 0%, 
          hsl(180, 10%, 50%) 2.5%, 
          hsl(83, 50%, 35%) 5%, 
@@ -44,21 +38,21 @@
          rgba(155, 78, 228, 0.6) 50%, 
          rgba(228, 78, 90, 0.6) 75%
          );
-    background-blend-mode: screen, color-dodge , soft-light;
-    background-size: 25% 20%, 200% 700%, 300% 100%, 200% 100%;
+    background-blend-mode: exclusion, hue, hard-light;
+    background-size: 100% 100%, 200% 700%, 300% 100%, 200% 100%;
     background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-    filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
+    filter: brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
   }
   
   .card-wrapper:hover > .color::after {
     content: "";
-      background-size: 25% 20%, 200% 700%, 300% 100%, 200% 100%;
+      background-size: 100% 100%, 200% 400%, 195% 100%, 200% 100%;
       background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
       filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
-      mix-blend-mode: exclusion;
+      mix-blend-mode: overlay;
     background-image: 
-    url("/docs/assets/img/KP42-2.png"),
-        repeating-linear-gradient( -33deg, 
+    url("/docs/assets/img/K40.png"),
+        repeating-linear-gradient( 90deg, 
         rgb(206, 42, 36) 6%,  
         rgb(157, 170, 223) 12%, 
         rgb(45, 153, 146) 18%, 
@@ -67,7 +61,7 @@
         rgb(206, 42, 36) 36%
         ),
         repeating-linear-gradient( 
-        133deg, 
+        90deg, 
         rgba(14, 21, 46, 0.5) 0%, 
         hsl(180, 10%, 50%) 2.5%, 
         hsl(83, 50%, 35%) 5%, 
@@ -83,7 +77,7 @@
         rgba(155, 78, 228, 0.6) 50%, 
         rgba(228, 78, 90, 0.6) 75%
         );
-      background-blend-mode: screen, color-dodge , soft-light;
+      background-blend-mode: exclusion, hue, hard-light;
   }
   
   /*形を整える*/
