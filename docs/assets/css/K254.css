@@ -13,12 +13,12 @@
       display: grid;
     }
     .card-wrapper {
-      background-image: url(/docs/assets/img/toreka_background.png);
+      background-image: url(/assets/img/toreka_background.png);
       background-size: 100%;
     }
     .card-wrapper:hover > .color {
       background-image:
-           url("/docs/assets/img/K254.png"),
+           url("/assets/img/K254.png"),
            linear-gradient( -33deg, 
            rgb(206, 42, 36) 6%,  
            rgb(157, 170, 223) 12%, 

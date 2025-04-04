@@ -13,7 +13,7 @@
     display: grid;
   }
   .card-wrapper {
-    background-image: url(/docs/assets/img/toreka_background.png);
+    background-image: url(/assets/img/toreka_background.png);
     background-size: 100%;
   }
   .card-wrapper:hover > .color {
