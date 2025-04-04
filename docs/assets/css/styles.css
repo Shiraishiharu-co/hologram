@@ -98,7 +98,15 @@ body, html {
 .button {
   position: absolute;
   left: 5%;
-  top: 10%;
+  top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+}
+.button > div {
+  flex: 0 0 auto;
 }
 .button a {
   display: inline-block; /* ボタンのようにする */
@@ -118,48 +126,4 @@ body, html {
   background: linear-gradient(45deg, #feb47b, #ff7e5f); /* グラデーションを反転 */
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
   transform: translateY(-3px); /* 少し浮かせる */
-}
-.button-link {
-  margin: 3px;
-  top: 5%;
-}
-.button-link-2 {
-  top: 10%;
-  margin: 3px;
-}
-.button-link-3 {
-  top: 15%;
-  margin: 3px;
-}
-.button-link-4 {
-  top: 20%;
-  margin: 3px;
-}
-.button-link-5 {
-  top: 25%;
-  margin: 3px;
-}
-.button-link-6 {
-  top: 30%;
-  margin: 3px;
-}
-.button-link-7 {
-  top: 35%;
-  margin: 3px;
-}
-.button-link-8 {
-  top: 40%;
-  margin: 3px;
-}
-.button-link-9 {
-  top: 45%;
-  margin: 3px;
-}
-.button-link-10 {
-  top: 50%;
-  margin: 3px;
-}
-.button-link-11 {
-  top: 55%;
-  margin: 3px;
 }/*# sourceMappingURL=styles.css.map */
