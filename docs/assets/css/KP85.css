@@ -18,8 +18,8 @@
     }
     .card-wrapper:hover > .color {
       background-image:
-           url("../img/MP06-2.png"),
-           linear-gradient( -33deg, 
+           url("../img/KP85.png"),
+           linear-gradient( -90deg, 
            rgb(206, 42, 36) 6%,  
            rgb(157, 170, 223) 12%, 
            rgb(45, 153, 146) 18%, 
@@ -28,7 +28,7 @@
            rgb(206, 42, 36) 36%
            ),
            linear-gradient( 
-           133deg, 
+           90deg, 
            rgba(14, 21, 46, 0.5) 0%, 
            hsl(180, 10%, 50%) 2.5%, 
            hsl(83, 50%, 35%) 5%, 
@@ -44,21 +44,21 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
-      background-blend-mode: screen;
-      background-size: 50% 40%, 200% 700%, 300% 100%, 200% 100%;
+      background-blend-mode: color-dodge, hue, soft-light;
+      background-size: 70% 80%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
       filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
     }
     
     .card-wrapper:hover > .color::after {
       content: "";
-        background-size: 50% 40%, 200% 400%, 195% 100%, 200% 100%;
+        background-size: 50% 70%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("../img/MP06-3.png"),
-          repeating-linear-gradient( 0deg, 
+      url("../img/KP85.png"),
+          repeating-linear-gradient( -90deg, 
           rgb(206, 42, 36) 6%,  
           rgb(157, 170, 223) 12%, 
           rgb(45, 153, 146) 18%, 
@@ -67,7 +67,7 @@
           rgb(206, 42, 36) 36%
           ),
           repeating-linear-gradient( 
-          0deg, 
+          90deg, 
           rgba(14, 21, 46, 0.5) 0%, 
           hsl(180, 10%, 50%) 2.5%, 
           hsl(83, 50%, 35%) 5%, 
@@ -83,7 +83,7 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        background-blend-mode: screen;
+        background-blend-mode: color-dodge, hue, soft-light;
     }
     
     /*形を整える*/
