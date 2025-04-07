@@ -13,12 +13,12 @@
       display: grid;
     }
     .card-wrapper {
-      background-image: url(/assets/img/toreka_background.png);
+      background-image: url(../img/toreka_background.png);
       background-size: 100%;
     }
     .card-wrapper:hover > .color {
       background-image:
-           url("/assets/img/holo-KP76.png"),
+           url("../img/holo-KP76.png"),
            linear-gradient( -33deg, 
            rgb(206, 42, 36) 6%,  
            rgb(157, 170, 223) 12%, 
@@ -57,7 +57,7 @@
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("/assets/img/gray.png"),
+      url("../img/holo-KP76.png"),
           repeating-linear-gradient( 0deg, 
           rgb(206, 42, 36) 6%,  
           rgb(157, 170, 223) 12%, 

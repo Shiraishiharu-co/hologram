@@ -14,13 +14,13 @@
     }
 
     .card-wrapper {
-      background-image: url(/assets/img/toreka_background.png);
+      background-image: url(../img/toreka_background.png);
       background-size: 100%;
     }
 
     .card-wrapper:hover > .color {
       background-image:
-           url("/assets/img/KP92.png"),
+           url("../img/KP92.png"),
            linear-gradient( -90deg, 
            0deg, rgb(255, 119, 115) 5%, rgba(255,237,95,1) 10%, rgba(168,255,95,1) 15%, rgba(131,255,247,1) 20%, rgba(120,148,255,1) 25%, rgb(216, 117, 255) 30%,rgb(255, 119, 115) 35%),
            linear-gradient( 
@@ -53,7 +53,7 @@
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("/assets/img/KP92.png"),
+      url("../img/KP92.png"),
       repeating-linear-gradient( 90deg, 
       rgb(206, 42, 36) 6%,  
       rgb(157, 170, 223) 12%, 
