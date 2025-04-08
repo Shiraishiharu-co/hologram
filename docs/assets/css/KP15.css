@@ -44,15 +44,15 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
-      background-blend-mode: color-dodge, hue, soft-light;
-      background-size: 300% 250%, 200% 700%, 300% 100%, 200% 100%;
+      background-blend-mode: screen, color-dodge , soft-light;
+      background-size: 100% 70%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
       filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
     }
     
     .card-wrapper:hover > .color::after {
       content: "";
-        background-size: 300% 250%, 200% 700%, 300% 100%, 200% 100%;
+        background-size: 100% 70%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
@@ -83,7 +83,7 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        background-blend-mode: color-dodge, hue, soft-light;
+        background-blend-mode: screen, color-dodge , soft-light;
     }
     
     /*形を整える*/
