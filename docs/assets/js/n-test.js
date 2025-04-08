@@ -61,7 +61,7 @@ function insertButtonHTML() {
             <a href="KP85.html">KP85</a>
         </div>
         <div class="button-link-20">
-            <a href="KP85.html">KP37</a>
+            <a href="KP37.html">KP37</a>
         </div>
         <div class="button-link-21">
             <a href="KP92.html">KP92</a>
