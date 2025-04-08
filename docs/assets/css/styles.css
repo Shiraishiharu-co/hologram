@@ -9,14 +9,17 @@ body, html {
   background: rgb(39, 38, 38);
   overflow: hidden;
   cursor: crosshair;
+  font-family: Arial, sans-serif;
 }
 
 .card-reflective {
   position: absolute;
   top: 20%;
-  left: 40%;
-  width: 280px;
-  height: 390px;
+  left: 50%;
+  width: 80%; /* 画面幅に対する割合 */
+  max-width: 280px; /* 最大幅 */
+  height: auto;
+  aspect-ratio: 0.72; /* 幅と高さの比率 */
   background: repeating-linear-gradient(62deg, rgb(218, 160, 176) 18.49%, rgb(255, 255, 255) 32.35%, rgb(217, 208, 146) 44.54%, #f1c0a2 53.78%, #f88c8c 70.59%, #c5b8b8 100%, #d6a8a8);
   border-radius: 8px;
   box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
@@ -103,27 +106,63 @@ body, html {
   flex-wrap: wrap;
   flex-direction: column;
   gap: 10px;
-  height: 90vh;
+  height: auto; /* 高さを自動に */
+  max-height: 90vh;
+}
+@media (max-width: 600px) {
+  .button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .button > div {
   flex: 0 0 auto;
 }
 .button a {
-  display: inline-block; /* ボタンのようにする */
-  padding: 10px 20px; /* ボタン内の余白 */
-  font-size: 16px; /* 文字の大きさ */
-  font-weight: bold; /* 太字 */
-  color: #ffffff; /* テキスト色 */
-  background: linear-gradient(45deg, #ff7e5f, #feb47b); /* グラデーション背景 */
-  border-radius: 8px; /* 角を丸く */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ボタンの影 */
-  text-align: center; /* テキストを中央寄せ */
-  text-decoration: none; /* アンダーラインを消す */
-  cursor: pointer; /* ポインタを指マークに */
-  transition: all 0.3s ease; /* ホバー時のアニメーション */
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (max-width: 600px) {
+  .button a {
+    font-size: 14px; /* フォントサイズを小さく */
+    padding: 8px 16px; /* ボタンの余白を調整 */
+  }
 }
 .button a:hover {
-  background: linear-gradient(45deg, #feb47b, #ff7e5f); /* グラデーションを反転 */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* 影を強調 */
-  transform: translateY(-3px); /* 少し浮かせる */
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .card-reflective {
+    width: 90%; /* 画面幅に対する割合 */
+    height: auto;
+  }
+  .button {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .card-reflective {
+    width: 95%;
+  }
+  .button {
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 6px;
+  }
 }/*# sourceMappingURL=styles.css.map */
