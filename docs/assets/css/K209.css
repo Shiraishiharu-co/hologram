@@ -19,7 +19,7 @@
   .card-wrapper:hover > .color {
     background-image:
          url(""),
-         linear-gradient( -180deg, 
+         repeating-linear-gradient( 0deg, 
          0deg, rgb(255, 119, 115) 5%, rgba(255,237,95,1) 10%, rgba(168,255,95,1) 15%, rgba(131,255,247,1) 20%, rgba(120,148,255,1) 25%, rgb(216, 117, 255) 30%,rgb(255, 119, 115) 35%),
          linear-gradient( 
          180deg, 
@@ -30,7 +30,7 @@
          rgba(14, 21, 46, 0.5) 10% , 
          rgba(14, 21, 46, 0.5) 15% 
          ),
-         radial-gradient(
+         repeating-linear-gradient(
          farthest-corner circle 
          at var(--mx) var(--my),
          rgba(6, 218, 255, 0.6) 0%, 

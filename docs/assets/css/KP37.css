@@ -52,12 +52,12 @@
     
     .card-wrapper:hover > .color::after {
       content: "";
-        background-size: 50% 70%, 200% 700%, 300% 100%, 200% 100%;
+        background-size: 70% 80%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("../img/KP37-2.png"),
+      url("../img/KP37.png"),
           repeating-linear-gradient( -90deg, 
           rgb(206, 42, 36) 6%,  
           rgb(157, 170, 223) 12%, 
