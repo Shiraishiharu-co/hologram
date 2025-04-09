@@ -18,7 +18,7 @@
   }
   .card-wrapper:hover > .color {
     background-image:
-         url("../img/KP42.png"),
+         url("../img/KP42.jpg"),
          linear-gradient( -33deg, 
          rgb(206, 42, 36) 6%,  
          rgb(157, 170, 223) 12%, 
@@ -57,7 +57,7 @@
       filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
       mix-blend-mode: exclusion;
     background-image: 
-    url("../img/KP42-2.png"),
+    url("../img/KP42-2.jpg"),
         repeating-linear-gradient( -33deg, 
         rgb(206, 42, 36) 6%,  
         rgb(157, 170, 223) 12%, 
