@@ -1,4 +1,7 @@
- .card-wrapper:hover > .color {
+.card-wrapper:hover > .color,
+.card-wrapper.hover-active > .color,
+.card-wrapper:hover > .color::after,
+.card-wrapper.hover-active > .color::after{
       background-image:
            url("../img/K162.jpg"),
            linear-gradient( -33deg, 
@@ -29,10 +32,11 @@
       background-blend-mode: color-dodge, hue, soft-light;
       background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-      filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
+      filter: brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
     }
     
-    .card-wrapper:hover > .color::after {
+    .card-wrapper:hover > .color::after,
+    .card-wrapper.hover-active > .color::after  {
       content: "";
         background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);

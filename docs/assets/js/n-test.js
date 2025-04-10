@@ -155,3 +155,11 @@ if (document.readyState === 'loading') {
     // タッチ時のスクロールを防止（必要に応じて調整）
     e.preventDefault();
   }, { passive: false });
+
+  const cardWrapper = document.querySelector('.card-wrapper');
+cardWrapper.addEventListener('touchstart', () => {
+  cardWrapper.classList.add('hover-active');
+});
+cardWrapper.addEventListener('touchend', () => {
+  cardWrapper.classList.remove('hover-active');
+})
