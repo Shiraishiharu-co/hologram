@@ -29,6 +29,7 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
+      -webkit-background-blend-mode: color-dodge, hue, soft-light;
       background-blend-mode: color-dodge, hue, soft-light;
       background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
@@ -69,6 +70,7 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
+        -webkit-background-blend-mode: color-dodge, hue, soft-light;
         background-blend-mode: color-dodge, hue, soft-light;
     }
     
