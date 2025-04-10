@@ -1,101 +1,48 @@
 @charset "UTF-8";
 body, html {
+  background-color: #212529;
+  display: grid;
+  height: calc(100vh - 32px);
   margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(39, 38, 38);
-  overflow: hidden;
-  cursor: crosshair;
-  font-family: Arial, sans-serif;
+  padding: 16px;
+  place-items: center;
+  position: relative;
+  width: calc(100% - 32px);
 }
 
-.card-reflective {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 80%; /* 画面幅に対する割合 */
-  max-width: 280px; /* 最大幅 */
-  height: auto;
-  aspect-ratio: 0.72; /* 幅と高さの比率 */
-  background: repeating-linear-gradient(62deg, rgb(218, 160, 176) 18.49%, rgb(255, 255, 255) 32.35%, rgb(217, 208, 146) 44.54%, #f1c0a2 53.78%, #f88c8c 70.59%, #c5b8b8 100%, #d6a8a8);
-  border-radius: 8px;
-  box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
-  transform: translate(-50%, -50%);
-  will-change: transform, filter;
-}
-.card-reflective::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.card {
+  border-radius: 4.5%/3.5%;
+  box-shadow: 0 10px 20px -5px #000;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 0, 0, 0.3), rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3));
-  z-index: 1;
-  mix-blend-mode: lighten;
-  pointer-events: none;
-  border-radius: 8px;
-}
-.card-reflective::after {
-  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0));
-  z-index: 2;
-  mix-blend-mode: screen;
-  pointer-events: none;
-  border-radius: 8px;
-  animation: move-light 5s infinite linear;
+  overflow: hidden;
 }
-.card-reflective-image {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 285px;
-  transform: translate(-50%, -50%);
-  will-change: transform;
-  z-index: 6;
-  opacity: 0.5;
+.card-wrapper {
+  display: flex; /* または grid */
+  justify-content: center;
+  align-items: center;
+  /* aspect-ratio で縦横比を固定するなら高さは指定しない */
+  width: 80%;
+  max-width: 500px;
+  aspect-ratio: 0.716;
+  margin: auto; /* 親要素からの中央寄せ */
+  position: relative;
+  background-image: url(../img/toreka_background.png);
+  background-size: 100%;
 }
-.card-reflective-image-2 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 285px;
-  transform: translate(-50%, -50%);
-  will-change: transform;
-  z-index: 7;
+.card-wrapper:hover {
+  transform: rotateX(var(--rx)) rotateY(var(--ry));
+  translate: calc((var(--ratiox) - 0.5) * -5%) calc((var(--ratioy) - 0.5) * -5%);
 }
-.card-reflective-image-3 {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 285px;
-  transform: translate(-50%, -50%);
-  will-change: transform;
-  z-index: 8;
+.card-wrapper:hover > .highlight {
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, 0.3) 10%, rgba(255, 255, 255, 0.15) 20%, rgba(0, 0, 0, 0.5) 90%);
+  mix-blend-mode: soft-light;
 }
-.card-reflective-holo, .card-reflective-holo-2, .card-reflective-holo-3 {
-  width: 281px;
-  height: 393px;
-  top: 20%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  transition: opacity 0.3s ease;
-  will-change: opacity;
-}
-.card-reflective-holo {
-  opacity: 1;
-}
-.card-reflective-holo-2, .card-reflective-holo-3 {
-  opacity: 0;
+
+.color {
+  mix-blend-mode: color-dodge;
+  display: grid;
 }
 
 .button {

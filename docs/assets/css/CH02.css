@@ -1,22 +1,4 @@
-.card-wrapper:hover {
-    transform: rotateX(var(--rx)) rotateY(var(--ry));
-      translate: calc((var(--ratiox) - 0.5) * -5%) calc((var(--ratioy) - 0.5) * -5%);
-    }
-    
-    .card-wrapper:hover > .highlight {
-      background: radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.3) 10%, rgba(255,255,255,.15) 20%, rgba(0,0,0,.5) 90%);
-      mix-blend-mode: soft-light;
-    }
-    
-    .color {
-      mix-blend-mode: color-dodge;
-      display: grid;
-    }
-    .card-wrapper {
-      background-image: url(../img/toreka_background.png);
-      background-size: 100%;
-    }
-    .card-wrapper:hover > .color {
+.card-wrapper:hover > .color {
       background-image:
            url("../img/CH01-2.jpg"),
            linear-gradient( -33deg, 
@@ -85,37 +67,4 @@
           );
         background-blend-mode: color-dodge, screen, soft-light;
     }
-    
-    /*形を整える*/
-    .card {
-      border-radius: 4.5% / 3.5%;
-      box-shadow: 0 10px 20px -5px #000;
-      height: 100%;
-      position: absolute;
-      width: 100%;
-      overflow: hidden;
-    }
-    
-    .card-wrapper {
-      aspect-ratio: .716;
-      display: grid;
-      height: calc(100% - 32px);
-      max-width: 100%;
-      place-items: center;
-      position: absolute;
-    }
-    
-    /*真ん中に持ってきている*/
-    body {
-      background-color: #212529;
-      display: grid;
-      height: calc(100vh - 32px);
-      margin: 0;
-      padding: 16px;
-      place-items: center;
-      position: relative;
-      width: calc(100% - 32px);
-    }
-    
-    
     
