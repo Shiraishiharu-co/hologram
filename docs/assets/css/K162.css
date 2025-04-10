@@ -27,13 +27,13 @@
        rgba(228, 78, 90, 0.6) 75%
        );
   background-blend-mode: color-dodge, hue, soft-light;
-  background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
+  background-size: 130% 100%, 200% 700%, 300% 100%, 200% 100%;
   background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
 }
 
 .card-wrapper:hover > .color::after {
   content: "";
-    background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
+    background-size: 130% 100%, 200% 700%, 300% 100%, 200% 100%;
     background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
     filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
     mix-blend-mode: exclusion;
