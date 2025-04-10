@@ -29,7 +29,6 @@
     background-blend-mode: screen, color-dodge , soft-light;
     background-size: 25% 20%, 200% 700%, 300% 100%, 200% 100%;
     background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-    filter: bulr(0.1px) brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
   }
   
   .card-wrapper:hover > .color::after {

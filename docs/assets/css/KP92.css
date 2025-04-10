@@ -23,7 +23,6 @@
       background-blend-mode: exclusion, overlay, soft-light;
       background-size: 120% 60%, 100% 100%, 100% 100%, 100% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-      filter: brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
     }
     
     .card-wrapper:hover > .color::after {
