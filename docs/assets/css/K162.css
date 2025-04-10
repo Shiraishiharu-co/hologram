@@ -1,7 +1,4 @@
-.card-wrapper:hover > .color,
-.card-wrapper.hover-active > .color,
-.card-wrapper:hover > .color::after,
-.card-wrapper.hover-active > .color::after{
+.card-wrapper:hover > .color {
       background-image:
            url("../img/K162.jpg"),
            linear-gradient( -33deg, 
@@ -36,8 +33,7 @@
       filter: brightness(calc((var(--hyp)*0.4) + .5)) contrast(2.5) saturate(1);
     }
     
-    .card-wrapper:hover > .color::after,
-    .card-wrapper.hover-active > .color::after  {
+    .card-wrapper:hover > .color::after {
       content: "";
         background-size: 160% 80%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
@@ -70,7 +66,6 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        -webkit-background-blend-mode: color-dodge, hue, soft-light;
         background-blend-mode: color-dodge, hue, soft-light;
     }
     
