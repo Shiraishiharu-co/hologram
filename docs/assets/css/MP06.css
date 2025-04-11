@@ -1,6 +1,6 @@
 .card-wrapper:hover > .color {
       background-image:
-           url("../img/MP06-2.jpg"),
+           url("../img/MP06.jpg"),
            linear-gradient( -33deg, 
            rgb(206, 42, 36) 6%,  
            rgb(157, 170, 223) 12%, 
@@ -27,18 +27,18 @@
            rgba(228, 78, 90, 0.6) 75%
            );
       background-blend-mode: screen;
-      background-size: 50% 40%, 200% 700%, 300% 100%, 200% 100%;
+      background-size: 80% 60%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
     }
     
     .card-wrapper:hover > .color::after {
       content: "";
-        background-size: 50% 40%, 200% 400%, 195% 100%, 200% 100%;
+        background-size: 90% 60%, 200% 400%, 195% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("../img/MP06-3.jpg"),
+      url("../img/MP06.jpg"),
           repeating-linear-gradient( 0deg, 
           rgb(206, 42, 36) 6%,  
           rgb(157, 170, 223) 12%, 
