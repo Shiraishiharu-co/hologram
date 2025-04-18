@@ -1,69 +1,68 @@
 .card-wrapper:hover > .color {
-      background-image:
-           url("../img/KP12.001.jpg"),
-           linear-gradient( -33deg, 
-           rgb(206, 42, 36) 6%,  
-           rgb(157, 170, 223) 12%, 
-           rgb(45, 153, 146) 18%, 
-           rgb(29, 151, 36) 24%, 
-           rgb(181, 64, 228) 30%, 
-           rgb(206, 42, 36) 36%
-           ),
-           linear-gradient( 
-           133deg, 
-           rgba(14, 21, 46, 0.5) 0%, 
-           hsl(180, 10%, 50%) 2.5%, 
-           hsl(83, 50%, 35%) 5%, 
-           hsl(180, 10%, 50%) 7.5%, 
-           rgba(14, 21, 46, 0.5) 10% , 
-           rgba(14, 21, 46, 0.5) 15% 
-           ),
-           radial-gradient(
-           farthest-corner circle 
-           at var(--mx) var(--my),
-           rgba(6, 218, 255, 0.6) 0%, 
-           rgba(38, 235, 127, 0.6) 25%, 
-           rgba(155, 78, 228, 0.6) 50%, 
-           rgba(228, 78, 90, 0.6) 75%
-           );
-      background-blend-mode: color-dodge, hue, soft-light;
-      background-size: 70% 80%, 200% 700%, 300% 100%, 200% 100%;
-      background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
-    }
-    
-    .card-wrapper:hover > .color::after {
-      content: "";
-        background-size: 50% 70%, 200% 700%, 300% 100%, 200% 100%;
-        background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
-        filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
-        mix-blend-mode: exclusion;
-      background-image: 
-      url("../img/KP12.001.jpg"),
-          repeating-linear-gradient( -33deg, 
-          rgb(206, 42, 36) 6%,  
-          rgb(157, 170, 223) 12%, 
-          rgb(45, 153, 146) 18%, 
-          rgb(29, 151, 36) 24%, 
-          rgb(181, 64, 228) 30%, 
-          rgb(206, 42, 36) 36%
-          ),
-          repeating-linear-gradient( 
-          133deg, 
-          rgba(14, 21, 46, 0.5) 0%, 
-          hsl(180, 10%, 50%) 2.5%, 
-          hsl(83, 50%, 35%) 5%, 
-          hsl(180, 10%, 50%) 7.5%, 
-          rgba(14, 21, 46, 0.5) 10% , 
-          rgba(14, 21, 46, 0.5) 15% 
-          ),
-          radial-gradient(
-          farthest-corner circle 
-          at var(--mx) var(--my),
-          rgba(6, 218, 255, 0.6) 0%, 
-          rgba(38, 235, 127, 0.6) 25%, 
-          rgba(155, 78, 228, 0.6) 50%, 
-          rgba(228, 78, 90, 0.6) 75%
-          );
-        background-blend-mode: color-dodge, hue, soft-light;
-    }
-    
+  background-image:
+  url("../img/KP12.001.jpg"),
+       linear-gradient( -180deg, 
+       rgb(255, 119, 115) 5%, 
+       rgba(255, 237, 95, 1) 10%, 
+       rgba(255, 119, 115, 1) 18%, 
+       rgb(255, 119, 115) 30%, 
+       rgba(242, 211, 8, 0.3) 35% ),
+
+       linear-gradient( 
+       180deg, 
+       rgba(255, 200,  50, 0.5) 1%, 
+       hsl(180, 10%, 50%) 2.5%, 
+       hsl(83, 50%, 35%) 5%, 
+       hsl(180, 10%, 50%) 7.5%, 
+       rgba(14, 21, 46, 0.5) 10% , 
+       rgba(14, 21, 46, 0.5) 15% 
+       ),
+       radial-gradient(
+       farthest-corner circle 
+       at var(--mx) var(--my),
+       rgba(6, 218, 255, 0.6) 0%, 
+       rgba(38, 235, 127, 0.6) 25%, 
+       rgba(155, 78, 228, 0.6) 50%, 
+       rgba(228, 78, 90, 0.6) 75%
+       );
+  background-blend-mode: exclusion, hue, hard-light;
+  background-size: 30% 40%, 200% 700%, 300% 100%, 300% 100%;
+  background-position: center, var(--posx) var(--posy), calc(var(--posx) * -1) var(--posy), center;
+  filter: brightness(0.7);
+}
+
+.card-wrapper:hover > .color::after {
+  content: "";
+    background-size: 30% 40%, 200% 400%, 195% 100%, 200% 100%;
+    background-position: center, (--posx) var(--posy), calc(var(--posx) * -1) var(--posy), center;
+    filter: brightness(calc((var(--hyp) * 0.5) + 0.4)) contrast(10) saturate(2);
+    mix-blend-mode: overlay;
+  background-image: 
+  url("../img/KP12.001.jpg"),
+      repeating-linear-gradient( 180deg, 
+      rgb(255, 26, 18) 10%,  
+      rgb(223, 221, 157) 12%, 
+      rgb(105, 184, 196) 18%, 
+      rgb(29, 151, 36) 24%, 
+      rgb(181, 64, 228) 30%, 
+      rgb(206, 42, 36) 36%
+      ),
+      repeating-linear-gradient( 
+      180deg, 
+      rgba(14, 21, 46, 0.5) 0%, 
+      hsl(180, 10%, 50%) 2.5%, 
+      hsl(83, 50%, 35%) 5%, 
+      hsl(180, 10%, 50%) 7.5%, 
+      rgba(14, 21, 46, 0.5) 10% , 
+      rgba(14, 21, 46, 0.5) 15% 
+      ),
+      radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgba(6, 218, 255, 0.6) 0%, 
+      rgba(38, 235, 127, 0.6) 25%, 
+      rgba(155, 78, 228, 0.6) 50%, 
+      rgba(228, 78, 90, 0.6) 75%
+      );
+    background-blend-mode: exclusion, hue, hard-light;
+}
