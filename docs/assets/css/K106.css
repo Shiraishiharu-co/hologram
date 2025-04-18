@@ -1,6 +1,8 @@
  .card-wrapper:hover > .color {
-      background-image:
-           url("../img/K106-1.jpg"),
+  position: relative;
+  --base-img: url("../img/K106-1.jpg");
+  background-image:
+    var(--base-img),
            linear-gradient( -33deg, 
            rgb(206, 42, 36) 6%,  
            rgb(157, 170, 223) 12%, 
@@ -29,6 +31,7 @@
       background-blend-mode: screen;
       background-size: 50% 35%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+      transition: --base-img 0.3s ease; 
     }
     
     .card-wrapper:hover > .color::after {

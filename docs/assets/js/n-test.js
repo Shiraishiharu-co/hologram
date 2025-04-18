@@ -163,3 +163,23 @@ cardWrapper.addEventListener('touchstart', () => {
 cardWrapper.addEventListener('touchend', () => {
   cardWrapper.classList.remove('hover-active');
 })
+
+const card = document.querySelector('.card-wrapper');
+const color = card.querySelector('.color');
+
+// 切り替えたい３つの画像パス
+const imgs = [
+  'url("../img/K106-1.jpg")',
+  'url("../img/K106-2.jpg")',
+  'url("../img/K106-3.jpg")'
+];
+
+card.addEventListener('mousemove', e => {
+  const rect = card.getBoundingClientRect();
+  const ratioX = (e.clientX - rect.left) / rect.width;        // 0〜1
+  const idx = Math.floor(ratioX * imgs.length);               // 0,1,2
+  const safeIdx = Math.min(idx, imgs.length - 1);             // 端数対策
+  
+  // CSS変数 --base-img に当該URLをセット
+  color.style.setProperty('--base-img', imgs[safeIdx]);
+});
