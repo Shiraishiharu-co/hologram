@@ -1,16 +1,16 @@
 .card-wrapper:hover > .color {
       background-image:
            url("../img/KP15.jpg"),
-           linear-gradient( -33deg, 
-           rgb(206, 42, 36) 6%,  
-           rgb(157, 170, 223) 12%, 
-           rgb(45, 153, 146) 18%, 
-           rgb(29, 151, 36) 24%, 
-           rgb(181, 64, 228) 30%, 
-           rgb(206, 42, 36) 36%
-           ),
+           linear-gradient(-33deg,
+           rgb(206, 42, 36) 10.5%, 
+           rgb(255, 244, 3) 35.29%, 
+           rgb(77, 221, 129) 39.92%, 
+           rgb(35, 29, 150) 48.74%, 
+           rgb(206, 42, 36) 64.71%, 
+           rgb(181, 64, 228) 71.43%),
+
            linear-gradient( 
-           133deg, 
+           0deg, 
            rgba(14, 21, 46, 0.5) 0%, 
            hsl(180, 10%, 50%) 2.5%, 
            hsl(83, 50%, 35%) 5%, 
@@ -26,7 +26,7 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
-      background-blend-mode: screen, color-dodge , soft-light;
+      background-blend-mode: color-dodge, exclusion, soft-light;
       background-size: 100% 70%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
     }
@@ -39,16 +39,16 @@
         mix-blend-mode: exclusion;
       background-image: 
       url("../img/KP15.jpg"),
-          repeating-linear-gradient( -33deg, 
-          rgb(206, 42, 36) 6%,  
-          rgb(157, 170, 223) 12%, 
-          rgb(45, 153, 146) 18%, 
-          rgb(29, 151, 36) 24%, 
-          rgb(181, 64, 228) 30%, 
-          rgb(206, 42, 36) 36%
-          ),
+      linear-gradient(-33deg,
+      rgb(206, 42, 36) 10.5%, 
+      rgb(255, 244, 3) 35.29%, 
+      rgb(77, 221, 129) 39.92%, 
+      rgb(35, 29, 150) 48.74%, 
+      rgb(206, 42, 36) 64.71%, 
+      rgb(181, 64, 228) 71.43%),
+
           repeating-linear-gradient( 
-          133deg, 
+          0deg, 
           rgba(14, 21, 46, 0.5) 0%, 
           hsl(180, 10%, 50%) 2.5%, 
           hsl(83, 50%, 35%) 5%, 
@@ -64,6 +64,6 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        background-blend-mode: screen, color-dodge , soft-light;
+        background-blend-mode: color-dodge, exclusion, soft-light;
     }
     

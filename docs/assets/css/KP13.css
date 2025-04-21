@@ -2,14 +2,14 @@
 .card-wrapper:hover > .color {
   background-image:
        url("../img/KP13.jpg"),
-       linear-gradient( 0deg, 
-       rgb(198, 206, 36) 6%,  
-       rgb(157, 170, 223) 12%, 
-       rgb(45, 153, 146) 18%, 
-       rgb(29, 151, 36) 24%, 
-       rgb(181, 64, 228) 30%, 
-       rgb(206, 42, 36) 36%
-       ),
+       linear-gradient(-33deg,
+       rgb(206, 42, 36) 10.5%, 
+       rgb(255, 244, 3) 35.29%, 
+       rgb(77, 221, 129) 39.92%, 
+       rgb(35, 29, 150) 48.74%, 
+       rgb(206, 42, 36) 64.71%, 
+       rgb(181, 64, 228) 71.43%),
+
        linear-gradient( 
        0deg, 
        rgba(14, 21, 46, 0.5) 0%, 
@@ -40,14 +40,13 @@
     mix-blend-mode: exclusion;
   background-image: 
   url("../img/KP13.jpg"),
-      repeating-linear-gradient( 0deg, 
-      rgb(206, 42, 36) 1%,  
-      rgb(157, 170, 223) 2%, 
-      rgb(45, 153, 146) 100%, 
-      rgb(29, 151, 36) 24%, 
-      rgb(181, 64, 228) 30%, 
-      rgb(206, 42, 36) 36%
-      ),
+       linear-gradient(-33deg,
+       rgb(206, 42, 36) 10.5%, 
+       rgb(255, 244, 3) 35.29%, 
+       rgb(77, 221, 129) 39.92%, 
+       rgb(35, 29, 150) 48.74%, 
+       rgb(206, 42, 36) 64.71%, 
+       rgb(181, 64, 228) 71.43%),
       repeating-linear-gradient( 
       0deg, 
       rgba(14, 21, 46, 0.5) 100%, 
