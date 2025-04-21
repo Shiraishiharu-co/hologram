@@ -1,6 +1,6 @@
  .card-wrapper:hover > .color {
       background-image:
-           url("../img/KP4-2.jpg"),
+           url("../img/KP4-1.jpg"),
            linear-gradient(-90deg,
            rgb(206, 42, 36) 10.5%, 
            rgb(255, 244, 3) 35.29%, 
@@ -26,7 +26,7 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
-      background-blend-mode: screen, soft-light;
+      background-blend-mode: color-dodge, exclusion, soft-light;
       background-size: 80% 55%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
     }
@@ -38,7 +38,7 @@
         filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
-      url("../img/KP4-1.jpg"),
+      url("../img/KP4-2.jpg"),
       linear-gradient(-90deg,
       rgb(206, 42, 36) 10.5%, 
       rgb(255, 244, 3) 35.29%, 
@@ -64,7 +64,7 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        background-blend-mode: color-dodge, screen;
+        background-blend-mode: color-dodge, exclusion, soft-light;
     }
     
  

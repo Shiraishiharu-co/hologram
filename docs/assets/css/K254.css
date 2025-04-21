@@ -34,7 +34,7 @@
     
     .card-wrapper:hover > .color::after {
       content: "";
-        background-size: 0% 10%, 200% 700%, 300% 100%, 200% 100%;
+        background-size: 10% 10%, 200% 700%, 300% 100%, 200% 100%;
         background-position: center, var(--posx) var(--posy), calc(var(--posx) * -1) var(--posy), center;
     filter: brightness(calc((var(--hyp) * 0.5) + 0.4)) contrast(2) saturate(4);
     mix-blend-mode: overlay;
