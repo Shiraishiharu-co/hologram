@@ -11,7 +11,7 @@
   position: absolute;
   inset: 0;
   background-image:
-    /* メタルストライプ（質感） */
+
     repeating-linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.1) 0px,
@@ -19,7 +19,6 @@
       rgba(255, 255, 255, 0.1) 4px
     ),
 
-    /* メタル光沢（リニア） */
     linear-gradient(
       180deg,
       hsl(0, 0%, 80%) 0%,
@@ -28,15 +27,15 @@
       hsl(0, 0%, 70%) 100%
     ),
 
-    /* 元のホログラム・キラキラ */
-    linear-gradient(-33deg,
-      rgb(206, 42, 36) 10.5%,
-      rgb(255, 244, 3) 35.29%,
-      rgb(77, 221, 129) 39.92%,
-      rgb(35, 29, 150) 48.74%,
-      rgb(206, 42, 36) 64.71%,
-      rgb(181, 64, 228) 71.43%
-    ),
+    linear-gradient(
+      -33deg, 
+      rgb(206, 42, 36) 6.3%,
+       rgb(255, 244, 3) 15.13%, 
+       rgb(77, 221, 129) 26.05%, 
+       rgb(35, 29, 150) 38.66%, 
+       rgb(41, 56, 147) 55.46%, 
+       rgb(206, 42, 36) 70.17%, 
+       rgb(181, 64, 228) 79.83%),
 
     radial-gradient(farthest-corner at var(--mx, 50%) var(--my, 50%),
       rgba(6, 218, 255, 0.6) 0%,
