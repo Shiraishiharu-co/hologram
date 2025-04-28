@@ -1,31 +1,33 @@
 .card-wrapper:hover > .color {
   background-image:
-       linear-gradient( -180deg, 
-       rgb(206, 42, 36) 10.5%, 
-       rgb(255, 244, 3) 35.29%, 
-       rgb(77, 221, 129) 39.92%, 
-       rgb(35, 29, 150) 48.74%, 
-       rgb(206, 42, 36) 64.71%, 
-       rgb(181, 64, 228) 71.43%),
-      
+  linear-gradient(-180deg,
+    rgb(230, 30, 30) 5%,           
+    rgb(206, 42, 36) 15%,           
+    rgb(255, 244, 3) 30%,
+    rgb(77, 221, 129) 38%,
+    rgb(35, 29, 150) 48%,
+    rgb(206, 42, 36) 60%,            
+    rgb(181, 64, 228) 71%
+  ),
 
-       linear-gradient( 
-       180deg, 
-       rgba(255, 200,  50, 0.5) 1%, 
-       hsl(180, 10%, 50%) 2.5%, 
-       hsl(83, 50%, 35%) 5%, 
-       hsl(180, 10%, 50%) 7.5%, 
-       rgba(14, 21, 46, 0.5) 10% , 
-       rgba(14, 21, 46, 0.5) 15% 
-       ),
-       radial-gradient(
-       farthest-corner circle 
-       at var(--mx) var(--my),
-       rgba(6, 218, 255, 0.6) 0%, 
-       rgba(38, 235, 127, 0.6) 25%, 
-       rgba(155, 78, 228, 0.6) 50%, 
-       rgba(228, 78, 90, 0.6) 75%
-       );
+  linear-gradient(
+    180deg,
+    rgba(246, 189, 3, 0.4) 1%,      
+    hsl(0, 100%, 40%) 2.5%,          
+    hsl(83, 50%, 35%) 5%,
+    hsl(180, 10%, 50%) 7.5%,
+    rgba(14, 21, 46, 0.5) 10%,
+    rgba(14, 21, 46, 0.5) 15%
+  ),
+
+  radial-gradient(
+    farthest-corner circle at var(--mx, 50%) var(--my, 50%),
+    rgba(255, 50, 50, 0.6) 0%,      
+    rgba(38, 235, 127, 0.5) 25%,
+    rgba(155, 78, 228, 0.5) 50%,
+    rgba(228, 78, 90, 0.7) 75%     
+  );
+
   background-blend-mode: exclusion, hue, hard-light;
   background-size: 200% 700%, 300% 100%, 300% 100%;
   background-position: var(--posx) var(--posy), calc(var(--posx) * -1) var(--posy), center;
@@ -40,13 +42,14 @@
     mix-blend-mode: overlay;
   background-image: 
       repeating-linear-gradient( 180deg, 
-      rgb(206, 42, 36) 10.5%, 
-      rgb(255, 244, 3) 35.29%, 
-      rgb(77, 221, 129) 39.92%, 
-      rgb(35, 29, 150) 48.74%, 
-      rgb(206, 42, 36) 64.71%, 
-      rgb(181, 64, 228) 71.43%),
-    
+      rgb(230, 30, 30) 5%,           
+      rgb(206, 42, 36) 15%,           
+      rgb(255, 244, 3) 30%,
+      rgb(77, 221, 129) 38%,
+      rgb(35, 29, 150) 48%,
+      rgb(206, 42, 36) 60%,            
+      rgb(181, 64, 228) 71%),
+      
       repeating-linear-gradient( 
       180deg, 
       rgba(14, 21, 46, 0.5) 0%, 

@@ -4,38 +4,51 @@
   max-width: 500px;
   aspect-ratio: 1.6;
   margin: auto;
-  background-color: #100f0f;
+  background-color: #00000000;
 }
 
 .card.color {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(-33deg,
-     rgb(206, 42, 36) 10.5%, 
-     rgb(255, 244, 3) 35.29%, 
-     rgb(77, 221, 129) 39.92%, 
-     rgb(35, 29, 150) 48.74%, 
-     rgb(206, 42, 36) 64.71%, 
-     rgb(181, 64, 228) 71.43%),
-    linear-gradient(133deg, 
-      rgba(14, 21, 46, 0.5) 0%, 
-      hsl(180, 10%, 50%) 2.5%, 
-      hsl(83, 50%, 35%) 5%, 
-      hsl(180, 10%, 50%) 7.5%, 
-      rgba(14, 21, 46, 0.5) 10% , 
-      rgba(14, 21, 46, 0.5) 15%
+    /* メタルストライプ（質感） */
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(0, 0, 0, 0.05) 2px,
+      rgba(255, 255, 255, 0.1) 4px
     ),
-    radial-gradient(farthest-corner circle at var(--mx, 50%) var(--my, 50%),
-      rgba(6, 218, 255, 0.6) 0%, 
-      rgba(38, 235, 127, 0.6) 25%, 
-      rgba(155, 78, 228, 0.6) 50%, 
+
+    /* メタル光沢（リニア） */
+    linear-gradient(
+      180deg,
+      hsl(0, 0%, 80%) 0%,
+      hsl(0, 0%, 95%) 47%,
+      hsl(0, 0%, 80%) 53%,
+      hsl(0, 0%, 70%) 100%
+    ),
+
+    /* 元のホログラム・キラキラ */
+    linear-gradient(-33deg,
+      rgb(206, 42, 36) 10.5%,
+      rgb(255, 244, 3) 35.29%,
+      rgb(77, 221, 129) 39.92%,
+      rgb(35, 29, 150) 48.74%,
+      rgb(206, 42, 36) 64.71%,
+      rgb(181, 64, 228) 71.43%
+    ),
+
+    radial-gradient(farthest-corner at var(--mx, 50%) var(--my, 50%),
+      rgba(6, 218, 255, 0.6) 0%,
+      rgba(38, 235, 127, 0.6) 25%,
+      rgba(155, 78, 228, 0.6) 50%,
       rgba(228, 78, 90, 0.6) 75%
     );
-  background-blend-mode: screen, screen, screen;
-  background-size: 200% 700%, 300% 100%, 200% 100%;
-  background-position: 0% var(--posy, 50%), var(--posx, 50%) var(--posy, 50%), var(--posx, 50%) var(--posy, 50%);
+  background-blend-mode: multiply, overlay, soft-light, screen;;
+  background-size: 150% 150%, 100% 100%, 200% 700%, 200% 100%;
+  background-position: center, center, 0% var(--posy, 50%), var(--posx, 50%) var(--posy, 50%);
+  filter: brightness(1.1) contrast(1.4) saturate(0.9);
   mix-blend-mode: screen;
-  pointer-events: none;
   z-index: 1;
+  pointer-events: none;
 }
