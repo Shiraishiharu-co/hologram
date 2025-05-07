@@ -34,7 +34,7 @@
 .card-wrapper:hover > .color::after {
   content: "";
     background-size: 200% 200%, 200% 700%, 300% 100%, 200% 100%;
-    background-position: calc(50% - 330px) calc(50% - 245px), 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
+    background-position: calc(30% - 350px) calc(50% - 245px), 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
     filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
     mix-blend-mode: exclusion;
   background-image: 
@@ -66,4 +66,3 @@
       );
     background-blend-mode: color-dodge, soft-light, screen;
 }
-
