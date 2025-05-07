@@ -42,6 +42,18 @@ body, html {
   display: grid;
 }
 
+.footer {
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+  color: #ffffff;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .button {
   position: absolute;
   left: 5%;
