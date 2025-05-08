@@ -6,7 +6,6 @@ body, html {
   padding: 16px;
   place-items: center;
   position: relative;
-  width: calc(100% - 32px);
 }
 
 .card {
