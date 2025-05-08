@@ -29,7 +29,7 @@
        );
   background-blend-mode: color-dodge, exclusion, soft-light;
   background-size: 80% 70%, 200% 700%, 100% 100%, 200% 100%;
-  background-position: calc(50% - 27px) 50%, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+  background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
 }
 
 .card-wrapper:hover > .color::after {
