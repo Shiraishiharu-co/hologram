@@ -57,77 +57,17 @@ body, html {
    color: #ffffff;
    text-decoration: none;
   }
-  
-.button {
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
-    height: auto; 
-    max-height: 90vh;
-
-    @media (max-width: 600px) {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    & > div {
-        flex: 0 0 auto;
-    }
-
-    a {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #ffffff;
-        background: linear-gradient(45deg, #ff7e5f, #feb47b);
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        @media (max-width: 600px) {
-            font-size: 14px; 
-            padding: 8px 16px; 
-        }
-
-        &:hover {
-            background: linear-gradient(45deg, #feb47b, #ff7e5f);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-            transform: translateY(-3px);
-        }
-    }
-}
 
 @media (max-width: 768px) {
     .card-reflective {
         width: 90%;  
         height: auto;
     }
-
-    .button {
-        top: 10%;
-        left: 50%;
-        transform: translateX(-50%);
-        gap: 8px;
-    }
 }
 
 @media (max-width: 480px) {
     .card-reflective {
         width: 95%;
-    }
-
-    .button {
-        left: 50%;
-        transform: translateX(-50%);
-        gap: 6px;
     }
 }
 
