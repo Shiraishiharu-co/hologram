@@ -1,5 +1,5 @@
 
-.card-wrapper:hover > .color {
+.card.color {
   background-image:
        url("../img/kp13.jpg"),
        linear-gradient(-33deg,
@@ -32,7 +32,7 @@
   background-position: calc(50% - 27px) 50%, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
 }
 
-.card-wrapper:hover > .color::after {
+.card.color::after {
   content: "";
     background-size: 80% 70%, 200% 700%, 100% 100%, 200% 100%;
     background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
