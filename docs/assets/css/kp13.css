@@ -35,7 +35,6 @@
   content: "";
     background-size: 80% 70%, 200% 700%, 100% 100%, 200% 100%;
     background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
-    filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
     mix-blend-mode: exclusion;
   background-image: 
   url("../img/kp13.jpg"),

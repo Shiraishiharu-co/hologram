@@ -27,7 +27,7 @@
        rgba(155, 78, 228, 0.6) 50%, 
        rgba(228, 78, 90, 0.6) 75%
        );
-  background-blend-mode: color-dodge, exclusion, soft-light;
+  background-blend-mode: color-dodge, hue, soft-light;
   background-size: 30% 20%, 200% 700%, 100% 100%, 200% 100%;
   background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
 }
@@ -36,7 +36,6 @@
   content: "";
     background-size: 30% 20%, 200% 700%, 100% 100%, 200% 100%;
     background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
-    filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
     mix-blend-mode: exclusion;
   background-image: 
   url("../img/k66.jpg"),

@@ -35,7 +35,6 @@
   content: "";
   background-size: 350% 280%, 200% 400%, 195% 100%, 200% 100%;
   background-position: center, 0% var(--posy), calc(var(--posx) * -1) calc(var(--posy) * -1), var(--posx) var(--posy); 
-  filter: brightness(calc((var(--hyp) * 0.5) + .7)) contrast(2) saturate(1);
   mix-blend-mode: exclusion;
   background-image: 
       url("../img/ch01.jpg"),
@@ -64,5 +63,5 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
       );
-  background-blend-mode: screen, soft-light;
+  background-blend-mode: screen, hard-light;
 }

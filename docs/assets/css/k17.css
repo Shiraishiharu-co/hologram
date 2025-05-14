@@ -65,7 +65,7 @@
           rgba(155, 78, 228, 0.6) 50%, 
           rgba(228, 78, 90, 0.6) 75%
           );
-        background-blend-mode: color-dodge, exclusion, soft-light;
+        background-blend-mode: color-dodge, hue, soft-light;
     }
     
   

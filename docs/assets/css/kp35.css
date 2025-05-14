@@ -26,7 +26,7 @@
            rgba(155, 78, 228, 0.6) 50%, 
            rgba(228, 78, 90, 0.6) 75%
            );
-      background-blend-mode: screen;
+      background-blend-mode: screen, color-dodge;
       background-size: 110% 70%, 200% 700%, 300% 100%, 200% 100%;
       background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
     }
@@ -35,7 +35,6 @@
       content: "";
         background-size: 110% 70%, 200% 400%, 195% 100%, 200% 100%;
         background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
-        filter: brightness(calc((var(--hyp)*0.5) + .7)) contrast(2) saturate(1);
         mix-blend-mode: exclusion;
       background-image: 
       url("../img/kp35-2.jpg"),
