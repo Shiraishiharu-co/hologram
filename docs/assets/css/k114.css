@@ -1,6 +1,6 @@
 .card.color {
   background-image:
-       url("../img/k114.jpg"),
+       url("../img/K114-2.jpg"),
        linear-gradient(-33deg,
        rgb(206, 42, 36) 10.5%, 
        rgb(255, 244, 3) 35.29%, 
@@ -10,7 +10,7 @@
        rgb(181, 64, 228) 71.43%),
 
        linear-gradient( 
-       0deg, 
+       -33deg, 
        rgba(14, 21, 46, 0.5) 0%, 
        hsl(180, 10%, 50%) 2.5%, 
        hsl(83, 50%, 35%) 5%, 
@@ -63,6 +63,6 @@
       rgba(155, 78, 228, 0.6) 50%, 
       rgba(228, 78, 90, 0.6) 75%
       );
-    background-blend-mode: color-dodge, exclusion, soft-light;
+    background-blend-mode: color-dodge, screen, exclusion;
 }
 

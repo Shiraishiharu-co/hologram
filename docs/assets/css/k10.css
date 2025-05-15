@@ -1,6 +1,6 @@
 .card.color {
     background-image:
-         url("../img/k10.jpg"),
+         url("../img/k10-1.jpg"),
          linear-gradient(-33deg,
          rgb(206, 42, 36) 10.5%, 
          rgb(255, 244, 3) 35.29%, 
@@ -37,7 +37,7 @@
       background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy);
       mix-blend-mode: exclusion;
     background-image: 
-    url("../img/k10.jpg"),
+    url("../img/k10-2.jpg"),
     linear-gradient(-33deg,
     rgb(206, 42, 36) 10.5%, 
     rgb(255, 244, 3) 35.29%, 
